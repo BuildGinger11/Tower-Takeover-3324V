@@ -28,7 +28,7 @@ void competition_initialize() {}
 
 void autonomous() {}
 
-//moo!
+
 
 
 void opcontrol()
