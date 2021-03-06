@@ -14,7 +14,7 @@
 
 #ifndef _PROS_MAIN_H_
 #define _PROS_MAIN_H_
-
+//e
 /**
  * If defined, some commonly used enums will have preprocessor macros which give
  * a shorter, more convenient naming pattern. If this isn't desired, simply
@@ -41,8 +41,8 @@
  */
  #include "drive.hpp"
  #include "intakes.hpp"
- #include "arm.hpp"
- #include "tray.hpp"
+ #include "Indexer.hpp"
+ #include "Lift.hpp"
 //#include "okapi/api.hpp"
 //#include "pros/api_legacy.h"
 
@@ -57,7 +57,7 @@
 // using namespace pros;
 // using namespace pros::literals;
 // using namespace okapi;
- 
+
 /**
  * Prototypes for the competition control tasks are redefined here to ensure
  * that they can be called from user code (i.e. calling autonomous from a

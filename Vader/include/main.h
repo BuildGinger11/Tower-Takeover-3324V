@@ -39,6 +39,12 @@
 /**
  * You should add more #includes here
  */
+<<<<<<< Updated upstream
+=======
+  #include "Drive.hpp"
+  #include "Lift.hpp"
+  #include "Intakes.hpp"
+>>>>>>> Stashed changes
 //#include "okapi/api.hpp"
 //#include "pros/api_legacy.h"
 

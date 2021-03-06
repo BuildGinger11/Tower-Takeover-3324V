@@ -6,8 +6,8 @@
 //Y = slow intake
 //shift+Y = slow outake
 
-pros::Motor right_intake(9, true);
-pros::Motor left_intake(2);
+pros::Motor right_intake(20, true);
+pros::Motor left_intake(19);
 
 void intake(int power)
 {
@@ -15,23 +15,17 @@ void intake(int power)
   right_intake.move(power);
 
 }
-int shiftkey()
-{
-  if(master.get_digital(DIGITAL_R2))
-    return -1;
-  return 1;
-}
 
- 
+
 void intakestuff()
 {
-  if (master.get_digital(DIGITAL_R1))
+  if (master.get_digital(DIGITAL_L2))
   {
-    intake(shiftkey()*127);
+    intake(127);
   }
-  else if (master.get_digital(DIGITAL_Y))
+  else if (master.get_digital(DIGITAL_L1))
   {
-    intake(shiftkey()*50);
+    intake(-127);
   }
   else
   {
